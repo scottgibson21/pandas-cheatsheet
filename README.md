@@ -34,9 +34,16 @@ df.groupby("<column-to-groupby")["column-to-sum"].sum()
 item_counts = df["col1"].value_counts()
 ```
 
+4. Count specific values in a column
+
+```python
+df[df["ColumnName"].isin(["Value1", "Value2", "Value3"])].ColumnName.value_counts()
+
 4.  Count total rows in data frame
 
-```
+```python
 len(df.index)
 ```
+
+
 
