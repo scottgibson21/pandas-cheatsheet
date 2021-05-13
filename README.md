@@ -28,5 +28,9 @@ new_df = old_df.filter(["column_1", "column_2"], axis=1)
 df.groupby("<column-to-groupby")["column-to-sum"].sum()
 ```
 
-3. Pivot
+3. Count unique values in column
+
+```python
+item_counts = df["col1"].value_counts()
+```
 
