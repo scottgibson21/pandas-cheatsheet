@@ -38,6 +38,7 @@ item_counts = df["col1"].value_counts()
 
 ```python
 df[df["ColumnName"].isin(["Value1", "Value2", "Value3"])].ColumnName.value_counts()
+```
 
 4.  Count total rows in data frame
 
