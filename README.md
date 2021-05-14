@@ -40,10 +40,16 @@ item_counts = df["col1"].value_counts()
 df[df["ColumnName"].isin(["Value1", "Value2", "Value3"])].ColumnName.value_counts()
 ```
 
-4.  Count total rows in data frame
+5.  Count total rows in data frame
 
 ```python
 len(df.index)
+```
+
+6.  Create new boolean column based on condition in specific column
+
+```python
+df["new_boolean_column"] =  df["column1"].map(lambda x: x == "something").astype('boolean')
 ```
 
 
