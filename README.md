@@ -25,7 +25,7 @@ new_df = old_df.filter(["column_1", "column_2"], axis=1)
 2. Group By Column Value and Sum
 
 ```python
-df.groupby("<column-to-groupby")["column-to-sum"].sum()
+df.groupby("column-to-groupby")["column-to-sum"].sum()
 ```
 
 3. Count unique values in column
@@ -52,5 +52,10 @@ len(df.index)
 df["new_boolean_column"] =  df["column1"].map(lambda x: x == "something").astype('boolean')
 ```
 
+7.  Drop rows based on column value
+
+```python
+df =  df[df.column_name != "value"]
+```
 
 
