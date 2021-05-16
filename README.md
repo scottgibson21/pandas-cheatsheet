@@ -58,4 +58,9 @@ df["new_boolean_column"] =  df["column1"].map(lambda x: x == "something").astype
 df =  df[df.column_name != "value"]
 ```
 
+8.  Group and sum
+
+```python
+new_df =  df["column1", "column2"].gropuby["column1"].sum("column2")
+```
 
