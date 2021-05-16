@@ -64,3 +64,9 @@ df =  df[df.column_name != "value"]
 new_df =  df["column1", "column2"].gropuby["column1"].sum("column2")
 ```
 
+9.  Get Column Data Types
+
+```python
+df.dtypes
+```
+
