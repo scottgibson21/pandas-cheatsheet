@@ -82,3 +82,15 @@ df.tail(n=100)
 ```python
 df.loc[[df["Column"].idxmax()], : ]
 ```
+
+### Filter to rows with specific column values (from list)
+
+```python
+values = [
+    "value1",
+    "value2",
+    "value3"
+]
+
+df = df[df["Column1"].isin(values)]
+```
