@@ -70,3 +70,11 @@ new_df =  df["column1", "column2"].gropuby["column1"].sum("column2")
 df.dtypes
 ```
 
+9.  Get first or last rows of dataset
+```python
+df.head()
+df.head(n=100)
+df.tail()
+df.tail(n=100)
+```
+
