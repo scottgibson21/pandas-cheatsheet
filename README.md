@@ -94,3 +94,9 @@ values = [
 
 df = df[df["Column1"].isin(values)]
 ```
+
+### Filter based off multiple column values
+
+```python
+df.loc[(df["Column1"].isin(["Value1"])) & (df["Column2"] == "Value2"), : ]
+```
