@@ -100,3 +100,9 @@ df = df[df["Column1"].isin(values)]
 ```python
 df.loc[(df["Column1"].isin(["Value1"])) & (df["Column2"] == "Value2"), : ]
 ```
+
+### filter to rows where column values match regex pattern
+
+```python
+new_df = df[df["column"].str.match(r"^(PREFIX1|PREFIX2)")==1]
+```
